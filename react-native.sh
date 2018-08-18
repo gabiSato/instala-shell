@@ -2,10 +2,11 @@
 
 # instala o node.js, react-native, watchman e o create-react-native-app
 
+cd ~
 sudo apt-get install curl
 sudo apt-get update
 
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 sudo npm install -g react-native-cli
@@ -21,5 +22,6 @@ git checkout v4.9.0
 make
 sudo make install
 
+cd ~
 sudo npm install -g create-react-native-app
 

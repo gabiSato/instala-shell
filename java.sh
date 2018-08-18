@@ -2,16 +2,19 @@
 
 #instala o java oracle
 
+cd ~
 sudo apt-get purge openjdk-\*
 sudo apt autoremove
 
 sudo mkdir -p /usr/local/Java
 cd Shell
 sudo cp -r jdk-10.0.2_linux-x64_bin.tar.gz /usr/local/Java
+cd ~
 cd /usr/local/Java
 sudo tar xvzf jdk-10.0.2_linux-x64_bin.tar.gz
 sudo rm -r jdk-10.0.2_linux-x64_bin.tar.gz
 
+cd ~
 # setando variavel de sistema pro java
 sudo gedit /etc/profile
 
@@ -25,7 +28,6 @@ sudo gedit /etc/profile
 
 # salve o arquivo
 
-cd ~
 . /etc/profile
 
 sudo shutdown -r
